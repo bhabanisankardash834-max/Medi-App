@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Symptom Checker & Cure Finder (with Chatbot)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Symptom Checker & Cure Finder</h1>
+    <p class="tagline">Type your symptoms to get suggestions, or search a disease to see cure & hospital in Odisha.</p>
+  </header>
+
+  <main>
+    <label for="optionSelect" class="label-strong">Select an option:</label>
+    <select id="optionSelect" aria-label="Select mode">
+      <option value="">--Choose--</option>
+      <option value="symptoms">Enter Symptoms (Chatbot)</option>
+      <option value="cure">Get Cure or Nearest Hospital</option>
+    </select>
+
+    <section id="optionContainer" class="option-section" aria-live="polite"></section>
+
+    <section id="result" class="result" aria-live="polite"></section>
+
+    <aside class="disclaimer">
+      <strong>Disclaimer:</strong> This tool is for educational guidance only and not a medical diagnosis. 
+      If you have severe or worsening symptoms (e.g., severe chest pain, trouble breathing, confusion, 
+      high fever, stroke-like symptoms), seek emergency care immediately.
+    </aside>
+  </main>
+
+  <footer>
+    <p>Built for Odisha users • No data is sent to external AI services</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
